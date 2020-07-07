@@ -1,0 +1,37 @@
+* {
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    font-family: 'Open Sans', sans-serif;
+}
+
+h1 {
+    font-family: 'Vast Shadow', cursive;
+}
+
+h3 {
+    font-family: 'Rhodium Libre', serif;
+}
+
+#container {
+    padding: 50px;
+    width: 80%;
+    display: block;
+    margin: 0 auto;
+}
+
+#container > div {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+}
+
+.localBusinessDiv {
+    margin: 20px;
+    padding: 50px;
+    border: 2px solid black;
+    border-radius: 10px;
+    width: 30%;
+}
