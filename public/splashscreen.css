@@ -12,19 +12,21 @@ body
     background-color: rgba(107,220,206,1);
 }
 
-.logo 
+#logo 
 {
     position: absolute;
-    top: 0%; left: 0%; right: 0%;
-    /* width: 1050px;
-    height: 750px; */
-    /* background-image: url(/images/logo.png); */
+    top: 0; bottom: 0; left: 0; right: 0;
+    margin: auto;
+    width: 490px;
+    height: 350px; 
+    background-image: url(../images/logo.png);
+    background-size: contain;
 }
 
 #spinner
 {
     position: absolute;
-    top: 300px; bottom: 0; left: 0; right: 0;
+    top: 550px; bottom: 0; left: 0; right: 0;
     margin: auto;
     width: 75px;
     height: 75px;
