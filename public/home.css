@@ -18,11 +18,11 @@ body
 
 nav a
 {
+    float: left;
     text-decoration: none; 
     color: white;
     font-size: 18px; 
-    padding: 20px 30px;
-    display: inline-block; 
+    padding: 20px 30px; 
     transition: all 0.5s ease 0s;
 }
 
