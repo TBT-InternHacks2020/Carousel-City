@@ -1,12 +1,10 @@
-body
-{
+body {
     background-color: #B5F4ED;
     margin: 0;
     padding: 0;
 }
 
-.sticky-section
-{
+.sticky-section {
     overflow: hidden;
     background-color: #6BDCCE; 
     margin-bottom: 50px;
@@ -17,8 +15,7 @@ body
     top: 0px;
 }
 
-nav a
-{
+nav a {
     float: left;
     text-decoration: none; 
     color: white;
@@ -27,8 +24,7 @@ nav a
     transition: all 0.5s ease 0s;
 }
 
-#logo
-{
+#logo {
     position: absolute;
     top: 0; bottom: 680px; left: 0; right: 0;
     margin: auto;
@@ -38,15 +34,13 @@ nav a
     background-size: contain; 
 }
 
-header
-{
+header {
     background-color: #8BF2E8; 
     text-align: center;
     padding: 35px 0px; 
 }
 
-header h3
-{
+header h3 {
     margin: 0px;
     font-size: 24px; 
     color: #ffffff;
@@ -54,12 +48,10 @@ header h3
     font-weight: normal;
 }
   
-h1 span
-{
+h1 span {
     font-weight: 400;
 }
   
-nav a:hover
-{
+nav a:hover {
     background-color: #004292;
 }

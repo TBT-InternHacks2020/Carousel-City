@@ -1,18 +1,15 @@
-.content
-{
+.content {
     margin: 50px 17%;
 }
 
-.content h3
-{
+.content h3 {
     border-bottom: 1px solid grey;
     padding-bottom: 10px;
     font-family: 'Shadows Into Light', cursive;
     margin-bottom: 20px
 }
   
-.content p
-{
+.content p {
     text-align: justify;
     margin-bottom: 50px;
     line-height: 2;
