@@ -55,3 +55,7 @@ h1 span {
 nav a:hover {
     background-color: #004292;
 }
+
+.content {
+    margin: 50px 8%;
+}
