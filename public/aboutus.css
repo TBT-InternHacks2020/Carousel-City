@@ -68,3 +68,8 @@
     margin-right: 325px;
     font-size: 18.72px;
 }
+
+.content p {
+    font-weight: normal;
+    font-size: 16px;
+}
