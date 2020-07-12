@@ -11,5 +11,5 @@ function pic (name) {
 
     // }
     console.log("hi");
-    document.body.appendChild(img);
+    document.body.appendChild(img); 
 }
