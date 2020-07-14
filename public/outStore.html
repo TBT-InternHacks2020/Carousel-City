@@ -28,60 +28,22 @@
   <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/css/bootstrap.min.css"
     integrity="sha384-9aIt2nRpC12Uk9gS9baDl411NQApFmC26EwAOH8WgZl5MYYxFfc+NcPb1dKGj7Sk" crossorigin="anonymous">
   <link rel="stylesheet" href="../public/styles/style.css">
-
-  <style>
-    #storefront {
-      position: absolute;
-      width: 1000px;
-      height: auto;
-      left: 0;
-      right: 0;
-      margin-left: auto;
-      margin-right: auto;
-      z-index: -1;
-    }
-
-    svg {
-      opacity: 20%;
-    }
-
-    #carouselExampleControls {
-      position: absolute;
-      width: 100%;
-      height: 100%;
-    }
-
-    .carousel-control-prev,
-    .carousel-control-next {
-      background-color: lightgray;
-    }
-  </style>
+  <link rel="stylesheet" href="../public/styles/navbar.css">
+  <link rel="stylesheet" href="../public/styles/outStore.css">
 </head>
 
 <body>
+  <div class="sticky-section">
+    <nav>
+      <a href="home.html">Home</a>
+      <a href="aboutus.html">About Us</a>
+      <a href="#">Explore Local Businesses</a>
+      <a href="#">Learn More</a>
+      <a href="#">Contact</a>
+    </nav>
+  </div>
   <div id="carouselExampleControls" class="carousel slide" data-ride="carousel">
-    <div class="carousel-inner">
-      <div class="carousel-item active">
-        <img src="../images/Storefront.png" id="storefront">
-        <svg width="1920" height="1080">
-          <rect width="788" height="418" x="370" y="256" style="fill:rgb(0,0,255);" />
-          <rect width="570" height="152" rx="174" ry="58" x="480" y="132" style="fill:rgb(0,255,255);" />
-        </svg>
-      </div>
-      <div class="carousel-item">
-        <img src="../images/Storefront.png" id="storefront">
-        <svg width="1920" height="1080">
-          <rect width="788" height="418" x="370" y="256" style="fill:rgb(0,0,255);" />
-          <rect width="570" height="152" rx="174" ry="58" x="480" y="132" style="fill:rgb(44, 52, 153);" />
-        </svg>
-      </div>
-      <div class="carousel-item">
-        <img src="../images/Storefront.png" id="storefront">
-        <svg width="1920" height="1080">
-          <rect width="788" height="418" x="370" y="256" style="fill:rgb(0,255,255);" />
-          <rect width="570" height="152" rx="174" ry="58" x="480" y="132" style="fill:rgb(0,255,255);" />
-        </svg>
-      </div>
+    <div id="insertStores" class="carousel-inner">
     </div>
     <a class="carousel-control-prev" href="#carouselExampleControls" role="button" data-slide="prev">
       <span class="carousel-control-prev-icon" aria-hidden="true"></span>

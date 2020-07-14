@@ -1,0 +1,27 @@
+.storefront {
+    width: 1000px;
+    height: auto;
+    display: block;
+    margin: 0 auto;
+    z-index: -1;
+    position: absolute;
+    left: 0;
+    right: 0;
+}
+
+svg>rect {
+    opacity: 20%;
+}
+
+#carouselExampleControls {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    background-color: white;
+    z-index: -2;
+}
+
+.carousel-control-prev,
+.carousel-control-next {
+    filter: invert(100%);
+}

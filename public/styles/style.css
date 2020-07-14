@@ -7,11 +7,17 @@ body {
     font-family: 'Open Sans', sans-serif;
 }
 
-h1 {
+.titleFont {
     font-family: 'Vast Shadow', cursive;
+    font-size: 20px;
 }
 
-h3 {
+.smallTitleFont {
+    font-family: 'Vast Shadow', cursive;
+    font-size: 12px;
+}
+
+.subtitleFont {
     font-family: 'Rhodium Libre', serif;
 }
 
@@ -22,7 +28,7 @@ h3 {
     margin: 0 auto;
 }
 
-#container > div {
+#container>div {
     display: flex;
     flex-direction: row;
     justify-content: center;
