@@ -19,8 +19,8 @@ function readData() {
             database.ref(i).on("value", function (snapshot) {
                 var snap = snapshot.val();
                 rowLB += generateBusinessDiv(snap["Name"], snap["Address"], snap["Type"]);
-                if (i == 0) genereateBusinessStorefront(i, snap["Name"], "active");
-                else genereateBusinessStorefront(i, snap["Name"], "");
+                if (i == 0) genereateBusinessStorefront(i, snap["Name"], "active", snap["Colors"][0], snap["Colors"][1]);
+                else genereateBusinessStorefront(i, snap["Name"], "", snap["Colors"][0], snap["Colors"][1]);
 
                 rowCounter++;
 
@@ -36,7 +36,7 @@ function readData() {
     });
 }
 
-function genereateBusinessStorefront(id, name, isActive) {
+function genereateBusinessStorefront(id, name, isActive, primaryColor, secondaryColor) {
     var titleClass = "titleFont";
     if (name.length > 25) {
         titleClass = "smallTitleFont";
@@ -44,11 +44,11 @@ function genereateBusinessStorefront(id, name, isActive) {
 
     $("#insertStores").append(`<div class="carousel-item ${isActive}">
     <img src="../images/Storefront.png" class="storefront">
-	<svg viewBox="0 0 1000 500" preserveAspectRatio="xMinYMin meet" class="svg-content">
+	<svg stroke="none" viewBox="0 0 1000 500" preserveAspectRatio="xMinYMin meet" class="svg-content">
     <text x="50%" y="32%" dominant-baseline="middle" text-anchor="middle" class="${titleClass}"">${name}</text>
-    <rect width="522" height="276" x="242" y="168" style="fill:rgb(0,0,255);"/>
-    <rect width="378" height="110" rx="60" ry="68" x="314" y="82" style="fill:rgb(44, 52, 153);" /> 
-    <rect onclick='enterStore(${id})' width="174" height="200" x="416" y="242" style="fill:rgb(0, 52, 153);" /> 
+    <rect width="522" height="276" x="242" y="168" style="fill:${primaryColor};"/>
+    <rect width="378" height="110" rx="60" ry="68" x="314" y="82" style="${secondaryColor};" /> 
+    <rect class='door' onclick='enterStore(${id})' width="174" height="200" x="416" y="242" style="fill:rgb(0, 52, 153);" /> 
     </svg>
   </div>`);
 }
@@ -63,10 +63,11 @@ function generateBusinessDiv(name, address, type) {
 
 function enterStore(storeName) {
     window.location.replace("../public/innerStore.html");
+    console.log("helo");
 }
 
 function generateInnerStore() {
-    document.getElementById("innerStore").innerHTML ='<img src="../images/Inside of Store.png"></img>';
+    document.getElementById("innerStore").innerHTML = '<img src="../images/Inside of Store.png"></img>';
 }
 
 readData();

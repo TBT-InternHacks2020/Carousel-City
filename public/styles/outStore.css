@@ -9,12 +9,24 @@
     right: 0;
 }
 
+svg {
+    z-index: 1;
+}
+
 svg>rect {
     opacity: 20%;
 }
 
+svg>.door {
+    z-index: 3;
+}
+
+svg>.door:hover {
+    cursor: pointer;
+}
+
 #carouselExampleControls {
-    position: absolute;
+    /* position: absolute; */
     width: 100%;
     height: 100%;
     background-color: white;
