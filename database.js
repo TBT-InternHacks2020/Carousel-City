@@ -20,7 +20,8 @@ function readData() {
                 var snap = snapshot.val();
                 rowLB += generateBusinessDiv(snap["Name"], snap["Address"], snap["Type"]);
                 if (i == 0) genereateBusinessStorefront(i, snap["Name"], "active", snap["Colors"][0], snap["Colors"][1]);
-                else genereateBusinessStorefront(i, snap["Name"], "", snap["Colors"][0], snap["Colors"][1]);
+                else if (i == 1) genereateBusinessStorefront(i, snap["Name"], "", snap["Colors"][0], snap["Colors"][1]);
+                // else genereateBusinessStorefront(i, snap["Name"], "", snap["Colors"][0], snap["Colors"][1]);
 
                 rowCounter++;
 
@@ -44,7 +45,7 @@ function genereateBusinessStorefront(id, name, isActive, primaryColor, secondary
 
     $("#insertStores").append(`<div class="carousel-item ${isActive}">
     <img src="../images/Storefront.png" class="storefront">
-	<svg stroke="none" viewBox="0 0 1000 500" preserveAspectRatio="xMinYMin meet" class="svg-content">
+    <svg stroke="none" viewBox="0 0 1000 500" preserveAspectRatio="xMinYMin meet" class="svg-content">
     <text x="50%" y="32%" dominant-baseline="middle" text-anchor="middle" class="${titleClass}"">${name}</text>
     <rect width="522" height="276" x="242" y="168" style="fill:${primaryColor};"/>
     <rect width="378" height="110" rx="60" ry="68" x="314" y="82" style="${secondaryColor};" /> 

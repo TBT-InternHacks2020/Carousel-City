@@ -1,24 +1,40 @@
+#carouselInfo {
+    text-align: center;
+    width: 80%;
+    margin: 0 auto;
+    border: 10px dotted white;
+    height: 200px;
+    padding: 50px;
+    border-radius: 100px;
+    margin-bottom: 60px;
+    color: #397d75;
+}
+
 .storefront {
     width: 1000px;
     height: auto;
     display: block;
     margin: 0 auto;
-    z-index: -1;
+    /* z-index: 1; */
     position: absolute;
     left: 0;
     right: 0;
 }
 
 svg {
-    z-index: 1;
+    z-index: 2;
 }
 
 svg>rect {
     opacity: 20%;
 }
 
-svg>.door {
+svg>img {
     z-index: 3;
+}
+
+svg>.door {
+    z-index: 5;
 }
 
 svg>.door:hover {
@@ -26,11 +42,13 @@ svg>.door:hover {
 }
 
 #carouselExampleControls {
-    /* position: absolute; */
     width: 100%;
     height: 100%;
     background-color: white;
-    z-index: -2;
+    /* background-image: url("../../images/carouselBG.jpg");
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    background-position: center; */
 }
 
 .carousel-control-prev,
