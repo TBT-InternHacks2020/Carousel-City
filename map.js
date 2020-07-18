@@ -110,8 +110,7 @@ var styleSheet = [
                   new google.maps.Marker({ position: business, map: map });
   
               });
-          }
-      });
+          } 
   }
     
   }
