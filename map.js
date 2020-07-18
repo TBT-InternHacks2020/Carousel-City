@@ -104,14 +104,12 @@ var styleSheet = [
           for (var i = 0; i < numBusinesses; i++) {
               database.ref(i).on("value", function (snapshot) {
                   var snap = snapshot.val();
-                  var latb = console.log(snap["Coordinates"][i][2][0]);
-                  var lngb = console.log(snap["Coordinates"][i][2][1]);
-                  var business = {lat: latb, lat: lngb}
+                  var latb = snap["Coordinates"][i][2][0];
+                  var lngb = snap["Coordinates"][i][2][1];
+                  var business = {lat: latb, lng: lngb}
                   new google.maps.Marker({ position: business, map: map });
   
               });
           } 
-  }
-    
   }
   
