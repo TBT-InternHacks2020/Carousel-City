@@ -82,7 +82,7 @@ var styleSheet = [
   function initMap() {
     // Styles a map in night mode.
     var Charleston = { lat: 32.7765, lng: -79.9311 };
-    
+
     var map = new google.maps.Map(document.getElementById("map"), {
       center: Charleston,
       styles: styleSheet,
@@ -90,8 +90,10 @@ var styleSheet = [
     });
     var marker = new google.maps.Marker({ position: Charleston, map: map });
     
+
     //new google.maps.Marker({ position: {lat: 32.7426751, lng: -79.9396906}, map: map });
   
+
     var firebaseConfig = {
       apiKey: "AIzaSyDjZmqB8ulR43ZUCMOTuXW2nbUJoD1PJtk",
       authDomain: "carousel-city.firebaseapp.com",
@@ -107,6 +109,7 @@ var styleSheet = [
           for (var i = 0; i < numBusinesses; i++) {
               database.ref(i).on("value", function (snapshot) {
                   var snap = snapshot.val();
+
                   var latb = snap["Coordinates"][i][2][0];
                   var lngb = snap["Coordinates"][i][2][1];
                   var business = {lat: latb, lng: lngb};
