@@ -1,21 +1,38 @@
 <!DOCTYPE html>
-<html lang="en">
-  <head>
-    <meta charset="utf-8" />
-    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
-    <meta name="viewport" content="width=device-width, initial-scale=1" />
+<html>
+<head>
+<meta charset="utf-8" />
+<title>Change a map's style</title>
+<meta name="viewport" content="initial-scale=1,maximum-scale=1,user-scalable=no" />
+<script src="https://api.mapbox.com/mapbox-gl-js/v1.11.1/mapbox-gl.js"></script>
+<link href="https://api.mapbox.com/mapbox-gl-js/v1.11.1/mapbox-gl.css" rel="stylesheet" />
+<link rel="stylesheet" href="styles/style.css" />
+</head>
+  
+  
+<body>
+  
+<div id="map"></div>
+<div id="menu">
+<input
+id="streets-v11"
+type="radio"
+name="rtoggle"
+value="streets"
+checked="checked"
+/>
+<label for="streets-v11">streets</label>
+<input id="light-v10" type="radio" name="rtoggle" value="light" />
+<label for="light-v10">light</label>
+<input id="dark-v10" type="radio" name="rtoggle" value="dark" />
+<label for="dark-v10">dark</label>
+<input id="outdoors-v11" type="radio" name="rtoggle" value="outdoors" />
+<label for="outdoors-v11">outdoors</label>
+<input id="satellite-v9" type="radio" name="rtoggle" value="satellite" />
+<label for="satellite-v9">satellite</label>
+</div>
 
-    <title>Hello!</title>
-    <link rel="stylesheet" href="/style.css" />
-    <script src="/map.js"></script>
-    <script src="https://www.gstatic.com/firebasejs/5.3.0/firebase.js"></script>
-    <script
-      async
-      defer
-      src="https://maps.googleapis.com/maps/api/js?key=AIzaSyCsq1c5iaTlxSdHErx9K7RwS3Vy4I7WEAI&callback=initMap"
-    ></script>
-  </head>
-  <body>
-    <div id="map"></div>
-  </body>
+<script src="../map.js"></script>
+ 
+</body>
 </html>
