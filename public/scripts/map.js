@@ -16,7 +16,7 @@ mapboxgl.accessToken = 'pk.eyJ1IjoibWQyMDAyIiwiYSI6ImNrYnhvZTExcTBjb2gyd3BrdzZ6Y
 
     for (var i = 0; i < inputs.length; i++) {
         inputs[i].onclick = switchLayer;
-    }
+    } 
 
   var marker = new mapboxgl.Marker()
         .setLngLat([-79.9311, 32.7765])
