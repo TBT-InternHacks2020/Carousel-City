@@ -10,6 +10,7 @@
   <script src="scripts/business.js"></script>
   <script src='https://api.mapbox.com/mapbox-gl-js/v1.11.1/mapbox-gl.js'></script>
   <link href='https://api.mapbox.com/mapbox-gl-js/v1.11.1/mapbox-gl.css' rel='stylesheet' />
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
 </head>
 
 <body>
@@ -23,9 +24,15 @@
   </header>
   <div class="sticky-section">
     <nav>
-      <a href="index.html">Home</a>
+      <a href="#">Home</a>
       <a href="aboutus.html">About Us</a>
-      <a href="#">Explore Local Businesses</a>
+      <div class="dropdown">
+        <a href="business.html">Explore Local Businesses <i class="fa fa-caret-down"></i>
+        </a>
+        <div class="dropdownContent">
+          <a href="login.html">Add Your Business</a>
+        </div>
+      </div>
       <a href="#">Learn More</a>
       <a href="#">Contact</a>
     </nav>
