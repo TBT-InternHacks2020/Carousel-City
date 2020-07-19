@@ -7,11 +7,17 @@ body {
     font-family: 'Open Sans', sans-serif;
 }
 
-h1 {
+.titleFont {
     font-family: 'Vast Shadow', cursive;
+    font-size: 20px;
 }
 
-h3 {
+.smallTitleFont {
+    font-family: 'Vast Shadow', cursive;
+    font-size: 12px;
+}
+
+.subtitleFont {
     font-family: 'Rhodium Libre', serif;
 }
 
@@ -22,8 +28,17 @@ h3 {
     margin: 0 auto;
 }
 
-body { margin: 0; padding: 0; }
-#map { position: absolute; top: 0; bottom: 0; width: 100%; }
+body {
+    margin: 0;
+    padding: 0;
+}
+
+#map {
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    width: 100%;
+}
 
 #menu {
     position: absolute;
@@ -32,8 +47,7 @@ body { margin: 0; padding: 0; }
     font-family: 'Open Sans', sans-serif;
 }
 
-
-#container > div {
+#container>div {
     display: flex;
     flex-direction: row;
     justify-content: center;

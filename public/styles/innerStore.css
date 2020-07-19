@@ -1,0 +1,10 @@
+#innerStoreImage {
+    width: 1000px;
+    height: auto;
+    display: block;
+    margin: 0 auto;
+    z-index: -1;
+    position: absolute;
+    left: 0;
+    right: 0;
+}
