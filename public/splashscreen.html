@@ -1,25 +1,29 @@
 <html>
-    <head>
-        <title>Welcome to Carousel City!</title>
-        <link rel =  "stylesheet" href = "styles/splashscreen.css">
-    </head>
-    <body>
-        <div id = "main-div">
-            <div id = "spinner">
-            </div>
-            <div id = "logo">
-            </div>
-        </div>
-        <script type="text/javascript">
 
-            window.onload=timeout;
-            function timeout(){
-            window.setTimeout("redirect()",2500)}
-            
-            function redirect(){
-            window.location="home.html"
-            return}
-            
-        </script>
-    </body>
+<head>
+    <title>Welcome to Carousel City!</title>
+    <link rel="stylesheet" href="styles/splashscreen.css">
+    <script type="text/javascript">
+        window.onload = timeout;
+
+        function timeout() {
+            window.setTimeout("redirect()", 2500)
+        }
+
+        function redirect() {
+            window.location = "home.html"
+            return
+        }
+    </script>
+</head>
+
+<body>
+    <div id="main-div">
+        <div id="spinner">
+        </div>
+        <div id="logo">
+        </div>
+    </div>
+</body>
+
 </html>
