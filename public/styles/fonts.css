@@ -2,12 +2,12 @@ body {
     font-family: 'Open Sans', sans-serif;
 }
 
-.titleFont, h1 {
+.titleFont, h1, h3 {
     font-family: 'Vast Shadow', cursive;
     /* font-size: 20px; */
 }
 
-.smallTitleFont {
+.smallTitleFont, h2 {
     font-family: 'Vast Shadow', cursive;
     font-size: 12px;
 }
