@@ -30,7 +30,7 @@ nav>.dropdown>a {
 }
 
 #logo {
-    position: absolute;
+    position: relative;
     top: 15px;
     left: 0;
     right: 0;

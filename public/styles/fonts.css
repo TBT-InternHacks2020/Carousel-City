@@ -6,12 +6,14 @@ body {
 h1,
 h3 {
     font-family: 'Vast Shadow', cursive;
+    font-weight: normal;
     /* font-size: 20px; */
 }
 
 .smallTitleFont,
 h2 {
     font-family: 'Vast Shadow', cursive;
+    font-weight: normal;
     font-size: 12px;
 }
 
