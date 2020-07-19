@@ -5,8 +5,6 @@ mapboxgl.accessToken = 'pk.eyJ1IjoibWQyMDAyIiwiYSI6ImNrYnhvZTExcTBjb2gyd3BrdzZ6Y
         zoom: 13,
         center: [-79.9311, 32.7765]
     });
-    //console.log("latb")
-
 
     var layerList = document.getElementById('menu');
     var inputs = layerList.getElementsByTagName('input');
@@ -23,10 +21,6 @@ mapboxgl.accessToken = 'pk.eyJ1IjoibWQyMDAyIiwiYSI6ImNrYnhvZTExcTBjb2gyd3BrdzZ6Y
   var marker = new mapboxgl.Marker()
         .setLngLat([-79.9311, 32.7765])
         .addTo(map);
-  var marker = new mapboxgl.Marker()
-        .setLngLat([-79.9352258, 32.7808901])
-        .addTo(map);
-
 
 var size = 300;
 
@@ -124,8 +118,11 @@ var size = 300;
                 'icon-image': 'pulsing-dot'
             }
         });
+
+        initMap();
     });
- //function initMap() {
+
+ function initMap() {
     var firebaseConfig = {
         apiKey: "AIzaSyDjZmqB8ulR43ZUCMOTuXW2nbUJoD1PJtk",
         authDomain: "carousel-city.firebaseapp.com",
@@ -135,37 +132,24 @@ var size = 300;
     };
     firebase.initializeApp(firebaseConfig);
     var database = firebase.database();
-    //function readData() {
+    function readData() {
         database.ref().on("value", function (snapshot) {
             var numBusinesses = snapshot.numChildren();
-            for (var i = 0; i < numBusinesses; i++) {
-                database.ref(i).on("value", function (snapshot) {
-                    // var snap = snapshot.val();
-  
-                    // var latb = snap[i]["Coordinates"][0];
-                    // var lngb = snap[i]["Coordinates"][1];
-                   
+            snapshot.forEach((childSnapshot) => {
+                var snap = childSnapshot.val();
 
-                    var latb = snapshot.child(i+"/Coordinates/0").val();
-                    var lngb = snapshot.child(i+"/Coordinates/1").val();
-                    console.log("latb")
+                if (snap && snap["Coordinates"]) {
+                    var latb = snap["Coordinates"][0];
+                    var lngb = snap["Coordinates"][1];
                     var marker = new mapboxgl.Marker()
-                    .setLngLat([latb, latb])
+                    .setLngLat([lngb, latb])
                     .addTo(map);
-
-    
-                });
-            }
+                } else {
+                    console.log('snap:', snap);
+                }
+            });
         });
-    //}
+    }
 
-// }
-
-// var ref = firebase.database().ref("users/ada");
-// ref.once("value")
-//   .then(function(snapshot) {
-//     var name = snapshot.child("name").val(); // {first:"Ada",last:"Lovelace"}
-//     var firstName = snapshot.child("name/first").val(); // "Ada"
-//     var lastName = snapshot.child("name").child("last").val(); // "Lovelace"
-//     var age = snapshot.child("age").val(); // null
-//   });
+    readData();
+}
