@@ -31,8 +31,7 @@ nav a {
 
 #logo {
     position: absolute;
-    top: 0;
-    bottom: 680px;
+    top: 30px;
     left: 0;
     right: 0;
     margin: auto;
