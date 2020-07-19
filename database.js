@@ -42,9 +42,8 @@ function genereateBusinessStorefront(id, name, isActive, primaryColor, secondary
     if (name.length > 25) {
         titleClass = "smallTitleFont";
     }
-
     $("#insertStores").append(`<div class="carousel-item ${isActive}">
-    <img src="../images/Storefront.png" class="storefront">
+    <img src="../public/images/Storefront.png" class="storefront">
     <svg stroke="none" viewBox="0 0 1000 500" preserveAspectRatio="xMinYMin meet" class="svg-content">
     <text x="50%" y="32%" dominant-baseline="middle" text-anchor="middle" class="${titleClass}"">${name}</text>
     <rect width="522" height="276" x="242" y="168" style="fill:${primaryColor};"/>

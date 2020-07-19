@@ -1,0 +1,17 @@
+body {
+    font-family: 'Open Sans', sans-serif;
+}
+
+.titleFont, h1 {
+    font-family: 'Vast Shadow', cursive;
+    /* font-size: 20px; */
+}
+
+.smallTitleFont {
+    font-family: 'Vast Shadow', cursive;
+    font-size: 12px;
+}
+
+.subtitleFont, nav > a {
+    font-family: 'Rhodium Libre', serif;
+}
