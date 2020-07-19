@@ -6,7 +6,7 @@ body {
 
 .sticky-section {
     overflow: hidden;
-    background-color: #6BDCCE; 
+    background-color: #6bdcc9; 
     margin-bottom: 50px;
     width: 100%; 
     color: white; 
@@ -53,7 +53,7 @@ h1 span {
 }
   
 nav a:hover {
-    background-color: #004292;
+    background-color: #e4b639;
 }
 
 .content {

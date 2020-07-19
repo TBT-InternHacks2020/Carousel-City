@@ -4,6 +4,13 @@
         <link rel =  "stylesheet" href = "styles/navbar.css">
         <link rel =  "stylesheet" href = "styles/business.css">
         <!-- <link type="text/css" rel="stylesheet" href="https://fonts.googleapis.com/css?family=Roboto:300,400,500"> -->
+        
+        <!-- <script src="https://maps.googleapis.com/maps/api/js?key=AIzaSyANow_dOABv6DsG0qdgPCcUYx6uyuULBgE=places"></script> -->
+        <script src =  "scripts/business.js"></script>
+        <script src='https://api.mapbox.com/mapbox-gl-js/v1.11.1/mapbox-gl.js'></script>
+        <link href='https://api.mapbox.com/mapbox-gl-js/v1.11.1/mapbox-gl.css' rel='stylesheet' />
+    </head>
+    <body>
         <header>
             <h1><div id = "logo"></div></h1>
             <h2><br></h2>
@@ -19,9 +26,18 @@
               <a href = "#">Contact</a>
             </nav>
         </div>
-    </head>
-    <body>
-        <div id="locationField">
+
+        <div id='map' style='width: 400px; height: 300px;'></div>
+            <script>
+            mapboxgl.accessToken = 'pk.eyJ1IjoiZGFyYTEyNDM4IiwiYSI6ImNrY3NpYXNqazE2ODMzM29jYjk2cWc2YzUifQ.Ql0-___FiJ60TX3g0AY1HA';
+            var map = new mapboxgl.Map({
+                container: 'map',
+                style: 'mapbox://styles/mapbox/streets-v11'
+            });
+            </script>
+
+
+        <!-- <div id="locationField">
             <input id="autocomplete"
                    placeholder="Enter your address"
                    onFocus="geolocate()"
@@ -48,9 +64,7 @@
               <td class="label">Country</td>
               <td class="wideField" colspan="3"><input class="field" id="country" disabled="true"/></td>
             </tr>
-          </table>
-          <!-- <script src="https://maps.googleapis.com/maps/api/js?key=AIzaSyCsq1c5iaTlxSdHErx9K7RwS3Vy4I7WEAI=places"></script> -->
-          <script src =  "scripts/business.js"></script>
-          <script src="https://maps.googleapis.com/maps/api/js?key=AIzaSyCsq1c5iaTlxSdHErx9K7RwS3Vy4I7WEAI=places&callback=initAutocomplete" async defer></script>
+          </table> -->
+
     </body>
 </html>
