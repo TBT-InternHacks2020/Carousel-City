@@ -119,3 +119,33 @@ var size = 300;
             }
         });
     });
+ function initMap() {
+    var firebaseConfig = {
+        apiKey: "AIzaSyDjZmqB8ulR43ZUCMOTuXW2nbUJoD1PJtk",
+        authDomain: "carousel-city.firebaseapp.com",
+        databaseURL: "https://carousel-city.firebaseio.com",
+        projectId: "carousel-city",
+        storageBucket: "carousel-city.appspot.com",
+    };
+    firebase.initializeApp(firebaseConfig);
+    var database = firebase.database();
+    function readData() {
+        database.ref().on("value", function (snapshot) {
+            var numBusinesses = snapshot.numChildren();
+            for (var i = 0; i < numBusinesses; i++) {
+                database.ref(i).on("value", function (snapshot) {
+                    var snap = snapshot.val();
+  
+                    var latb = snap[i]["Coordinates"][0];
+                    var lngb = snap[i]["Coordinates"][1];
+                    var marker = new mapboxgl.Marker()
+                    .setLngLat([lngb, latb])
+                    .addTo(map);
+    
+                });
+            }
+        });
+    }
+
+}
+      
