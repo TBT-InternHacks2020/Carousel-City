@@ -49,8 +49,11 @@ function genereateBusinessStorefront(id, name, isActive, primaryColor, secondary
     <text x="50%" y="32%" dominant-baseline="middle" text-anchor="middle" class="${titleClass}"">${name}</text>
     <rect width="522" height="276" x="242" y="168" style="fill:${primaryColor};"/>
     <rect width="378" height="110" rx="60" ry="68" x="314" y="82" style="${secondaryColor};" /> 
-    <rect class='door' onclick='enterStore(${id})' width="174" height="200" x="416" y="242" style="fill:rgb(0, 52, 153);" /> 
+    <rect class='door'  width="174" height="200" x="416" y="242" style="fill:rgb(0, 52, 153);" /> 
     </svg>
+    <div class="enterStoreDiv">
+    <a class="enterStoreLink" href="#" onclick='enterStore(${id})'>Enter ${name}</a>
+    </div>
   </div>`);
 }
 
