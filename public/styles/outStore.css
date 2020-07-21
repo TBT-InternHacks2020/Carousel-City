@@ -70,10 +70,21 @@ svg>.door:hover {
     font-family: 'Rhodium Libre', serif;
 }
 
-.enterStoreDiv > a {
+.enterStoreDiv>a {
     text-decoration: none;
 }
 
-#carouselInfo > .titleFont {
+#carouselInfo>.titleFont {
     font-size: 30px;
+}
+
+#innerStoreImage {
+    width: 1000px;
+    height: auto;
+    display: block;
+    margin: 0 auto;
+    z-index: 2;
+    position: absolute;
+    left: 0;
+    right: 0;
 }
