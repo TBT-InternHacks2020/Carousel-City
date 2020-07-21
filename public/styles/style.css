@@ -23,23 +23,6 @@ body {
     margin: 0 auto;
 }
 
-#map {
-    position: absolute;
-    margin: auto;
-    height: 400px;
-    right: 100px;
-    left: 100px;
-}
-
-#menu {
-    position: absolute;
-    margin: auto;
-    right: 100px;
-    background: #fff;
-    padding: 10px;
-    font-family: 'Open Sans', sans-serif;
-}
-
 #container>div {
     display: flex;
     flex-direction: row;
