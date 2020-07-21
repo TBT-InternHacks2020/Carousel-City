@@ -1,0 +1,59 @@
+<html>
+
+<head>
+    <title>Carousel City</title>
+
+    <link href="https://fonts.googleapis.com/css2?family=Vast+Shadow&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Rhodium+Libre&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Open+Sans&display=swap" rel="stylesheet">
+    
+    <link rel="stylesheet" href="styles/navbar.css">
+    <link rel="stylesheet" href="styles/carouselview.css">
+    <link rel="stylesheet" href="styles/fonts.css">
+    <script src="scripts/carouselview.js"></script>
+    </script>
+</head>
+
+<body>
+    <header>
+        <h1>
+            <div id="logo"></div>
+        </h1>
+        <h2><br></h2>
+        <h3><br></h3>
+        <h3>Carousel City</h3>
+    </header>
+    <div class="sticky-section">
+        <nav>
+            <a href="#">Home</a>
+            <a href="aboutus.html">About Us</a>
+            <a href="business.html">Explore Local Businesses</a>
+            <a href="#">Learn More</a>
+            <a href="#">Contact</a>
+        </nav>
+    </div>
+
+    <div class="container" data-ng-app="app">
+        <div class="card" data-ng-controller="MainCtrl">
+          <div class="card__header">
+            <h3 class="card__heading">Angular Slider Directive</h3>
+            <h4 class="card__heading--secondary">A Responsive Multi Item - Single Click Angular Slider</h3>
+              </div>
+          <div class="card__content">
+            <mmb-slider 
+              dots="true" 
+              infinite="false" 
+              speed=300 
+              slides-to-show=5 
+              touch-move="false" 
+              slides-to-scroll=1
+              list="items"
+              class="slider one-time slick-slider">
+            </mmb-slider>
+          </div>
+        </div>
+      </div>      
+    
+</body>
+
+</html>
