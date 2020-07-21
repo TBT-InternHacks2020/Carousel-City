@@ -31,7 +31,7 @@ nav>.dropdown>a {
 
 #logo {
     position: relative;
-    top: 15px;
+    top: 0;
     left: 0;
     right: 0;
     margin: auto;
@@ -61,10 +61,6 @@ h1 span {
 
 nav a:hover {
     background-color: #e4b639;
-}
-
-.content {
-    margin: 50px 8%;
 }
 
 .dropdown {

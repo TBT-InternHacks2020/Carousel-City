@@ -1,3 +1,10 @@
+.content {
+    position: absolute;
+    margin: auto;
+    margin: 50px 8%;
+    margin-top: 400px;
+}
+
 .content h3 {
     border-bottom: 1px solid grey;
     padding-bottom: 10px;
