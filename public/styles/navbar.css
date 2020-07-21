@@ -5,7 +5,6 @@ body {
 }
 
 .sticky-section {
-    overflow: hidden;
     background-color: #6BDCCE;
     margin-bottom: 50px;
     width: 100%;
@@ -21,7 +20,8 @@ nav {
     justify-content: center;
 }
 
-nav a {
+nav a,
+nav>.dropdown>a {
     text-decoration: none;
     color: white;
     font-size: 18px;
@@ -30,7 +30,7 @@ nav a {
 }
 
 #logo {
-    position: absolute;
+    position: relative;
     top: 15px;
     left: 0;
     right: 0;
@@ -65,4 +65,33 @@ nav a:hover {
 
 .content {
     margin: 50px 8%;
+}
+
+.dropdown {
+    display: flex;
+    justify-content: center;
+}
+
+.dropdownContent {
+    display: none;
+    position: absolute;
+    top: 70px;
+    text-align: center;
+    min-width: 303px;
+}
+
+.dropdownContent a {
+    text-decoration: none;
+    display: block;
+    text-align: left;
+    background-color: #6BDCCE;
+    padding: 20px 30px;
+}
+
+.dropdownContent a:hover {
+    background-color: #e4b639;
+}
+
+.dropdown:hover .dropdownContent {
+    display: block;
 }

@@ -54,25 +54,25 @@
     background-size: contain;
 }
 
-#rectangle_green{
+#rectangle_green {
     position: absolute;
     margin: auto;
     right: 280px;
     left: 280px;
     height: 163px;
     z-index: -2;
-    background: #6AC979;
+    background: #95e6a2;
     border-radius: 50px;
 }
 
-#rectangle_orange{
+#rectangle_orange {
     position: absolute;
     margin: auto;
     right: 280px;
     left: 280px;
     height: 163px;
     z-index: -2;
-    background: #F8C977;
+    background: #ffe594;
     border-radius: 50px;
 }
 
@@ -88,22 +88,22 @@
     /* display: flex;
     align-items: center; */
     /* line-height:143px; */
-  	padding-bottom: 80px;
+    padding-bottom: 80px;
     text-align: left;
     margin-left: 325px;
     font-size: 18.72px;
-    color: white;
+    color: #3e7848;
 }
 
 .content h3 {
     /* display: flex;
     align-items: center; */
     /* line-height:143px; */
-  	padding-bottom: 80px;
+    padding-bottom: 80px;
     text-align: right;
     margin-right: 325px;
     font-size: 18.72px;
-    color: black;
+    color: darkgoldenrod;
 }
 
 .content p {

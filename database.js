@@ -51,7 +51,7 @@ function genereateBusinessStorefront(id, name, isActive, primaryColor, secondary
     <rect class='door'  width="174" height="200" x="416" y="242" style="fill:rgb(0, 52, 153);" /> 
     </svg>
     <div class="enterStoreDiv">
-    <a class="enterStoreLink" href="#" onclick='enterStore(${id})'>Enter ${name}</a>
+    <a class="enterStoreLink" href="#" onclick="enterStore(${id}, '${name}')">Enter ${name}</a>
     </div>
   </div>`);
 }
@@ -64,9 +64,13 @@ function generateBusinessDiv(name, address, type) {
     </div>`
 }
 
-function enterStore(storeName) {
-    window.location.replace("../public/innerStore.html");
-    console.log("helo");
+function enterStore(id, storeName) {
+    document.getElementById("content").innerHTML = '<img id="innerStoreImage" src="../public/images/Inside of Store.png"></img>';
+    document.getElementById("content").style.backgroundColor = "white";
+    document.getElementById("content").style.minWidth = "100%";
+    document.getElementById("content").style.minHeight = "700px";
+    document.getElementById("content").style.display = "inline-block";
+    console.log(id + " " + storeName);
 }
 
 function generateInnerStore() {
