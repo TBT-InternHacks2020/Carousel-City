@@ -1,0 +1,23 @@
+body {
+    font-family: 'Open Sans', sans-serif;
+}
+
+.titleFont,
+h1,
+h3 {
+    font-family: 'Vast Shadow', cursive;
+    font-weight: normal;
+    /* font-size: 20px; */
+}
+
+.smallTitleFont,
+h2 {
+    font-family: 'Vast Shadow', cursive;
+    font-weight: normal;
+    font-size: 12px;
+}
+
+.subtitleFont,
+nav {
+    font-family: 'Rhodium Libre', serif;
+}

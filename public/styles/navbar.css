@@ -5,7 +5,6 @@ body {
 }
 
 .sticky-section {
-    overflow: hidden;
     background-color: #6BDCCE;
     margin-bottom: 50px;
     width: 100%;
@@ -13,6 +12,7 @@ body {
     position: -webkit-sticky;
     position: sticky;
     top: 0px;
+    z-index: 100;
 }
 
 nav {
@@ -20,7 +20,8 @@ nav {
     justify-content: center;
 }
 
-nav a {
+nav>a,
+nav>.dropdown>a {
     text-decoration: none;
     color: white;
     font-size: 18px;
@@ -28,15 +29,23 @@ nav a {
     transition: all 0.5s ease 0s;
 }
 
+nav>a:hover,
+nav>.dropdown>a:hover {
+    color: white;
+}
+
+a {
+    text-decoration: none !important;
+}
+
 #logo {
-    position: absolute;
+    position: relative;
     top: 0;
-    bottom: 680px;
     left: 0;
     right: 0;
     margin: auto;
-    width: 140px;
-    height: 100px;
+    width: 280px;
+    height: 200px;
     background-image: url(../images/logo.png);
     background-size: contain;
 }
@@ -47,9 +56,9 @@ header {
     padding: 35px 0px;
 }
 
-header h3 {
+header h1 {
     margin: 0px;
-    font-size: 24px;
+    font-size: 40px;
     color: #ffffff;
     font-style: normal;
     font-weight: normal;
@@ -60,9 +69,34 @@ h1 span {
 }
 
 nav a:hover {
-    background-color: #004292;
+    background-color: #e4b639;
 }
 
-.content {
-    margin: 50px 8%;
+.dropdown {
+    display: flex;
+    justify-content: center;
+}
+
+.dropdownContent {
+    display: none;
+    position: absolute;
+    top: 70px;
+    text-align: center;
+    min-width: 303px;
+}
+
+.dropdownContent a {
+    text-decoration: none;
+    display: block;
+    text-align: left;
+    background-color: #6BDCCE;
+    padding: 20px 30px;
+}
+
+.dropdownContent a:hover {
+    background-color: #e4b639;
+}
+
+.dropdown:hover .dropdownContent {
+    display: block;
 }

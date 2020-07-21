@@ -1,7 +1,13 @@
+.content {
+    position: absolute;
+    margin: auto;
+    margin: 50px 8%;
+    margin-top: 400px; /* 400px is the height of the map */
+}
+
 .content h3 {
     border-bottom: 1px solid grey;
     padding-bottom: 10px;
-    font-family: 'Shadows Into Light', cursive;
     margin-bottom: 20px
 }
   

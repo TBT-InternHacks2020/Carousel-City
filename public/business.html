@@ -1,0 +1,59 @@
+<html>
+
+<head>
+  <title></title>
+  <script src="https://www.gstatic.com/firebasejs/7.15.5/firebase-app.js"></script>
+  <script src="https://www.gstatic.com/firebasejs/7.15.5/firebase-auth.js"></script>
+  <script src="https://www.gstatic.com/firebasejs/7.15.5/firebase-database.js"></script>
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+
+  <link href="https://fonts.googleapis.com/css2?family=Vast+Shadow&display=swap" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css2?family=Rhodium+Libre&display=swap" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css2?family=Open+Sans&display=swap" rel="stylesheet">
+
+  <link rel="stylesheet" href="styles/navbar.css">
+  <link rel="stylesheet" href="styles/business.css">
+  <link rel="stylesheet" href="styles/fonts.css">
+  
+  <script src="scripts/business.js"></script>
+  <script src="../database.js"></script>
+  <script src='https://api.mapbox.com/mapbox-gl-js/v1.11.1/mapbox-gl.js'></script>
+  <link href='https://api.mapbox.com/mapbox-gl-js/v1.11.1/mapbox-gl.css' rel='stylesheet' />
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+</head>
+
+<body>
+  <header>
+    <div id="logo"></div>
+    <h1>Carousel City</h1>
+  </header>
+  <div class="sticky-section">
+    <nav>
+      <a href="index.html">Home</a>
+      <a href="aboutus.html">About Us</a>
+      <div class="dropdown">
+        <a href="map.html">Explore Local Businesses <i class="fa fa-caret-down"></i>
+        </a>
+        <div class="dropdownContent">
+          <a href="login.html">Add Your Business</a>
+        </div>
+      </div>
+      <a href="#">Learn More</a>
+      <a href="#">Contact</a>
+    </nav>
+  </div>
+
+  <div class="content">
+    <div id='map' style='width: 400px; height: 300px;'></div>
+    <script>
+      mapboxgl.accessToken =
+        'pk.eyJ1IjoiZGFyYTEyNDM4IiwiYSI6ImNrY3NpYXNqazE2ODMzM29jYjk2cWc2YzUifQ.Ql0-___FiJ60TX3g0AY1HA';
+      var map = new mapboxgl.Map({
+        container: 'map',
+        style: 'mapbox://styles/mapbox/streets-v11'
+      });
+    </script>
+  </div>
+</body>
+
+</html>
