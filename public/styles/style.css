@@ -29,17 +29,20 @@ body {
 }
 
 #map {
-
     position: absolute;
-    top: 20%;
-    bottom: 20%;
-    width: 90%;
-    padding-right: 10%;
-    padding-left: 10%;
+    height: 700px;
+    width: 1000px;
+    /* margin-right: 50px;
+    margin-left: 50px; */
+    margin: auto;
+    right: 280px;
+    left: 280px;
 }
 
 #menu {
-    position: fixed;
+    position: absolute;
+    margin: auto;
+    right: 280px;
     background: #fff;
     padding: 10px;
     font-family: 'Open Sans', sans-serif;
