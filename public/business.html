@@ -2,12 +2,21 @@
 
 <head>
   <title></title>
+  <script src="https://www.gstatic.com/firebasejs/7.15.5/firebase-app.js"></script>
+  <script src="https://www.gstatic.com/firebasejs/7.15.5/firebase-auth.js"></script>
+  <script src="https://www.gstatic.com/firebasejs/7.15.5/firebase-database.js"></script>
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+
+  <link href="https://fonts.googleapis.com/css2?family=Vast+Shadow&display=swap" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css2?family=Rhodium+Libre&display=swap" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css2?family=Open+Sans&display=swap" rel="stylesheet">
+
   <link rel="stylesheet" href="styles/navbar.css">
   <link rel="stylesheet" href="styles/business.css">
   <link rel="stylesheet" href="styles/fonts.css">
-  <!-- <link type="text/css" rel="stylesheet" href="https://fonts.googleapis.com/css?family=Roboto:300,400,500"> -->
-  <!-- <script src="https://maps.googleapis.com/maps/api/js?key=AIzaSyANow_dOABv6DsG0qdgPCcUYx6uyuULBgE=places"></script> -->
+  
   <script src="scripts/business.js"></script>
+  <script src="../database.js"></script>
   <script src='https://api.mapbox.com/mapbox-gl-js/v1.11.1/mapbox-gl.js'></script>
   <link href='https://api.mapbox.com/mapbox-gl-js/v1.11.1/mapbox-gl.css' rel='stylesheet' />
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
@@ -34,46 +43,17 @@
     </nav>
   </div>
 
-  <div id='map' style='width: 400px; height: 300px;'></div>
-  <script>
-    mapboxgl.accessToken =
-      'pk.eyJ1IjoiZGFyYTEyNDM4IiwiYSI6ImNrY3NpYXNqazE2ODMzM29jYjk2cWc2YzUifQ.Ql0-___FiJ60TX3g0AY1HA';
-    var map = new mapboxgl.Map({
-      container: 'map',
-      style: 'mapbox://styles/mapbox/streets-v11'
-    });
-  </script>
-
-
-  <!-- <div id="locationField">
-            <input id="autocomplete"
-                   placeholder="Enter your address"
-                   onFocus="geolocate()"
-                   type="text"/>
-          </div>
-
-          <table id="address">
-            <tr>
-              <td class="label">Street address</td>
-              <td class="slimField"><input class="field" id="street_number" disabled="true"/></td>
-              <td class="wideField" colspan="2"><input class="field" id="route" disabled="true"/></td>
-            </tr>
-            <tr>
-              <td class="label">City</td>
-              <td class="wideField" colspan="3"><input class="field" id="locality" disabled="true"/></td>
-            </tr>
-            <tr>
-              <td class="label">State</td>
-              <td class="slimField"><input class="field" id="administrative_area_level_1" disabled="true"/></td>
-              <td class="label">Zip code</td>
-              <td class="wideField"><input class="field" id="postal_code" disabled="true"/></td>
-            </tr>
-            <tr>
-              <td class="label">Country</td>
-              <td class="wideField" colspan="3"><input class="field" id="country" disabled="true"/></td>
-            </tr>
-          </table> -->
-
+  <div class="content">
+    <div id='map' style='width: 400px; height: 300px;'></div>
+    <script>
+      mapboxgl.accessToken =
+        'pk.eyJ1IjoiZGFyYTEyNDM4IiwiYSI6ImNrY3NpYXNqazE2ODMzM29jYjk2cWc2YzUifQ.Ql0-___FiJ60TX3g0AY1HA';
+      var map = new mapboxgl.Map({
+        container: 'map',
+        style: 'mapbox://styles/mapbox/streets-v11'
+      });
+    </script>
+  </div>
 </body>
 
 </html>
