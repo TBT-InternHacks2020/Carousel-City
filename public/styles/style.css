@@ -12,6 +12,27 @@ body {
     font-size: 12px;
 }
 
+.mapboxgl-popup {
+    max-width: 400px;
+    font: 12px/20px 'Helvetica Neue', Arial, Helvetica, sans-serif;
+}
+
+#fly {
+    display: block;
+    position: relative;
+    margin: 0px auto;
+    width: 50%;
+    height: 40px;
+    padding: 10px;
+    border: none;
+    border-radius: 3px;
+    font-size: 12px;
+    text-align: center;
+    color: #fff;
+    background: #ee8a65;
+}
+
+
 .subtitleFont {
     font-family: 'Rhodium Libre', serif;
 }
