@@ -26,12 +26,13 @@ nav>.dropdown>a {
     color: white;
     font-size: 18px;
     padding: 20px 30px;
-    transition: all 0.5s ease 0s;
+    transition: background-color 0.5s ease;
 }
 
 nav>a:hover,
 nav>.dropdown>a:hover {
     color: white;
+    background-color: #e4b639;
 }
 
 a {
@@ -68,10 +69,6 @@ h1 span {
     font-weight: 400;
 }
 
-nav a:hover {
-    background-color: #e4b639;
-}
-
 .dropdown {
     display: flex;
     justify-content: center;
@@ -88,7 +85,7 @@ nav a:hover {
     text-decoration: none;
     display: block;
     background-color: #6BDCCE;
-    padding: 20px 30px;
+    padding: 20px 0px;
     width: 262px;
     color: white;
 }
