@@ -123,14 +123,14 @@ var size = 300;
     });
 
  function initMap() {
-    // var firebaseConfig = {
-    //     apiKey: "AIzaSyDjZmqB8ulR43ZUCMOTuXW2nbUJoD1PJtk",
-    //     authDomain: "carousel-city.firebaseapp.com",
-    //     databaseURL: "https://carousel-city.firebaseio.com",
-    //     projectId: "carousel-city",
-    //     storageBucket: "carousel-city.appspot.com",
-    // };
-    // firebase.initializeApp(firebaseConfig);
+    var firebaseConfig = {
+        apiKey: "AIzaSyDjZmqB8ulR43ZUCMOTuXW2nbUJoD1PJtk",
+        authDomain: "carousel-city.firebaseapp.com",
+        databaseURL: "https://carousel-city.firebaseio.com",
+        projectId: "carousel-city",
+        storageBucket: "carousel-city.appspot.com",
+    };
+    firebase.initializeApp(firebaseConfig);
     var database = firebase.database();
     function readData() {
         database.ref().on("value", function (snapshot) {
