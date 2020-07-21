@@ -42,9 +42,9 @@ svg>.door:hover {
 }
 
 #carouselExampleControls {
-    width: 100%;
+    width: 80%;
     height: 100%;
-    background-color: white;
+    background-color: #60bdb4;
     border-radius: 150px;
     margin-bottom: 50px;
     /* background-image: url("../../images/carouselBG.jpg");
