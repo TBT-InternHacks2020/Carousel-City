@@ -20,7 +20,7 @@ nav {
     justify-content: center;
 }
 
-nav a,
+nav>a,
 nav>.dropdown>a {
     text-decoration: none;
     color: white;
@@ -29,14 +29,23 @@ nav>.dropdown>a {
     transition: all 0.5s ease 0s;
 }
 
+nav>a:hover,
+nav>.dropdown>a:hover {
+    color: white;
+}
+
+a {
+    text-decoration: none !important;
+}
+
 #logo {
     position: relative;
-    top: 15px;
+    top: 0;
     left: 0;
     right: 0;
     margin: auto;
-    width: 140px;
-    height: 100px;
+    width: 280px;
+    height: 200px;
     background-image: url(../images/logo.png);
     background-size: contain;
 }
@@ -47,9 +56,9 @@ header {
     padding: 35px 0px;
 }
 
-header h3 {
+header h1 {
     margin: 0px;
-    font-size: 24px;
+    font-size: 40px;
     color: #ffffff;
     font-style: normal;
     font-weight: normal;
@@ -61,10 +70,6 @@ h1 span {
 
 nav a:hover {
     background-color: #e4b639;
-}
-
-.content {
-    margin: 50px 8%;
 }
 
 .dropdown {

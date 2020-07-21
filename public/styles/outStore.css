@@ -2,55 +2,16 @@
     text-align: center;
     width: 80%;
     margin: 0 auto;
-    border: 10px dotted white;
-    height: 200px;
-    padding: 50px;
-    border-radius: 100px;
     margin-bottom: 60px;
-    color: #397d75;
 }
 
-.storefront {
-    width: 1000px;
-    height: auto;
-    display: block;
-    margin: 0 auto;
-    /* z-index: 1; */
-    position: absolute;
-    left: 0;
-    right: 0;
-}
-
-svg {
-    z-index: 2;
-}
-
-svg>rect {
-    opacity: 20%;
-}
-
-svg>img {
-    z-index: 3;
-}
-
-svg>.door {
-    z-index: 5;
-}
-
-svg>.door:hover {
-    cursor: pointer;
-}
-
-#carouselExampleControls {
-    width: 100%;
-    height: 100%;
-    background-color: white;
+#carouselLB {
+    height: 500px;
     border-radius: 150px;
+    margin: 0 auto;
+    margin-top: 450px;
+    display: block;
     margin-bottom: 50px;
-    /* background-image: url("../../images/carouselBG.jpg");
-    background-repeat: no-repeat;
-    background-attachment: fixed;
-    background-position: center; */
 }
 
 .carousel-control-prev,
@@ -68,10 +29,17 @@ svg>.door:hover {
     padding: 10px;
     border-radius: 10px;
     font-family: 'Rhodium Libre', serif;
+    font-size: 20px;
+    background-color: #6BDCCE;
 }
 
 .enterStoreDiv>a {
     text-decoration: none;
+    color: white;
+}
+
+.enterStoreDiv>a:hover {
+    font-weight: bold;
 }
 
 #carouselInfo>.titleFont {
@@ -87,4 +55,58 @@ svg>.door:hover {
     position: absolute;
     left: 0;
     right: 0;
+}
+
+.storefront {
+    width: 300px;
+    height: 300px;
+    background: url("../images/Storefront\ Blank.png") no-repeat;
+    background-size: 100% auto;
+}
+
+#insertStores {
+    height: 600px;
+    padding-top: 60px;
+}
+
+.carousel-item.active,
+.carousel-item.next,
+.carousel-item.prev,
+.carousel-item-left,
+.carousel-item-right {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    flex-basis: 100%
+}
+
+.overallOutStore {
+    background-color: #397d75;
+    margin: 10px;
+    padding: 20px;
+    padding-bottom: 0px;
+    border-radius: 50px;
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    flex-basis: 100%;
+}
+
+#map {
+    position: absolute;
+    margin: auto;
+    height: 400px;
+    right: 100px;
+    left: 100px;
+}
+
+#menu {
+    position: absolute;
+    margin: auto;
+    right: 100px;
+    background: #fff;
+    padding: 10px;
+    font-family: 'Open Sans', sans-serif;
 }
