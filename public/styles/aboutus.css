@@ -90,6 +90,7 @@
     padding-bottom: 80px;
     text-align: left;
     margin-left: 435px;
+    margin-right: 300px;
     font-size: 18.72px;
     color: #3e7848;
 }
@@ -101,11 +102,12 @@
     padding-bottom: 80px;
     text-align: right;
     margin-right: 435px;
+    margin-left: 300px;
     font-size: 18.72px;
     color: darkgoldenrod;
 }
 
 .content p {
     font-weight: normal;
-    font-size: 16px;
+    font-size: 12px;
 }
