@@ -24,6 +24,7 @@
   <link href="https://fonts.googleapis.com/css2?family=Open+Sans&display=swap" rel="stylesheet">
   <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/css/bootstrap.min.css"
     integrity="sha384-9aIt2nRpC12Uk9gS9baDl411NQApFmC26EwAOH8WgZl5MYYxFfc+NcPb1dKGj7Sk" crossorigin="anonymous">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
   <link rel="stylesheet" href="../public/styles/navbar.css">
   <link rel="stylesheet" href="../public/styles/outStore.css">
   <link rel="stylesheet" href="styles/fonts.css">
@@ -35,22 +36,26 @@
     <h1>
       <div id="logo"></div>
     </h1>
-    <h2><br></h2>
-    <h3><br></h3>
     <h3>Carousel City</h3>
   </header>
   <div class="sticky-section">
     <nav>
       <a href="index.html">Home</a>
       <a href="aboutus.html">About Us</a>
-      <a href="business.html">Explore Local Businesses</a>
+      <div class="dropdown">
+        <a href="map.html">Explore Local Businesses <i class="fa fa-caret-down"></i>
+        </a>
+        <div class="dropdownContent">
+          <a href="login.html">Add Your Business</a>
+        </div>
+      </div>
       <a href="#">Learn More</a>
       <a href="#">Contact</a>
     </nav>
   </div>
 
   <div id="carouselInfo">
-    <span class="titleFont">Welcome to Carousel City View!</span>
+    <span class="titleFont">Welcome to the Carousel City View!</span>
     <br><Br>
     <span>Here is where you can browse through all the local businesses near you. You can enter the storefront and see
       what they have to offer!</span>

@@ -29,14 +29,17 @@ body {
 }
 
 #map {
+
     position: absolute;
-    top: 0;
-    bottom: 0;
-    width: 100%;
+    top: 20%;
+    bottom: 20%;
+    width: 90%;
+    padding-right: 10%;
+    padding-left: 10%;
 }
 
 #menu {
-    position: absolute;
+    position: fixed;
     background: #fff;
     padding: 10px;
     font-family: 'Open Sans', sans-serif;

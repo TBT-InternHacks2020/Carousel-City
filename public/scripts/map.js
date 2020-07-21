@@ -16,7 +16,7 @@ mapboxgl.accessToken = 'pk.eyJ1IjoibWQyMDAyIiwiYSI6ImNrYnhvZTExcTBjb2gyd3BrdzZ6Y
 
     for (var i = 0; i < inputs.length; i++) {
         inputs[i].onclick = switchLayer;
-    }
+    } 
 
   var marker = new mapboxgl.Marker()
         .setLngLat([-79.9311, 32.7765])
@@ -118,7 +118,10 @@ var size = 300;
                 'icon-image': 'pulsing-dot'
             }
         });
+
+        initMap();
     });
+
  function initMap() {
     var firebaseConfig = {
         apiKey: "AIzaSyDjZmqB8ulR43ZUCMOTuXW2nbUJoD1PJtk",
@@ -132,19 +135,21 @@ var size = 300;
     function readData() {
         database.ref().on("value", function (snapshot) {
             var numBusinesses = snapshot.numChildren();
-            for (var i = 0; i < numBusinesses; i++) {
-                database.ref(i).on("value", function (snapshot) {
-                    var snap = snapshot.val();
-  
-                    var latb = snap[i]["Coordinates"][0];
-                    var lngb = snap[i]["Coordinates"][1];
+            snapshot.forEach((childSnapshot) => {
+                var snap = childSnapshot.val();
+
+                if (snap && snap["Coordinates"]) {
+                    var latb = snap["Coordinates"][0];
+                    var lngb = snap["Coordinates"][1];
                     var marker = new mapboxgl.Marker()
                     .setLngLat([lngb, latb])
                     .addTo(map);
-    
-                });
-            }
+                } else {
+                    console.log('snap:', snap);
+                }
+            });
         });
     }
 
+    readData();
 }

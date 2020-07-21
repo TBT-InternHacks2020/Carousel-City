@@ -45,6 +45,8 @@ svg>.door:hover {
     width: 100%;
     height: 100%;
     background-color: white;
+    border-radius: 150px;
+    margin-bottom: 50px;
     /* background-image: url("../../images/carouselBG.jpg");
     background-repeat: no-repeat;
     background-attachment: fixed;
@@ -61,4 +63,17 @@ svg>.door:hover {
     margin: 0 auto;
     margin-bottom: 50px;
     margin-top: -50px;
+    border: 3px solid black;
+    width: fit-content;
+    padding: 10px;
+    border-radius: 10px;
+    font-family: 'Rhodium Libre', serif;
+}
+
+.enterStoreDiv > a {
+    text-decoration: none;
+}
+
+#carouselInfo > .titleFont {
+    font-size: 30px;
 }
