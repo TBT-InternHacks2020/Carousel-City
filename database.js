@@ -140,11 +140,6 @@ function generateBusinessDiv(name, address, type) {
 }
 
 function enterStore(id, storeName) {
-    document.getElementById("content").innerHTML = '<img id="innerStoreImage" src="../public/images/Inside of Store.png"></img>';
-    document.getElementById("content").style.backgroundColor = "white";
-    document.getElementById("content").style.minWidth = "100%";
-    document.getElementById("content").style.minHeight = "700px";
-    document.getElementById("content").style.display = "inline-block";
     console.log(id + " " + storeName);
     localStorage.setItem("idStore",id);
 }

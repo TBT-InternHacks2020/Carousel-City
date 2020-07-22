@@ -16,13 +16,9 @@ mapboxgl.accessToken = 'pk.eyJ1IjoibWQyMDAyIiwiYSI6ImNrYnhvZTExcTBjb2gyd3BrdzZ6Y
 
     for (var i = 0; i < inputs.length; i++) {
         inputs[i].onclick = switchLayer;
-    } 
+    }
 
-  var marker = new mapboxgl.Marker()
-        .setLngLat([-79.9311, 32.7765])
-        .addTo(map);
-
-var size = 300;
+    var size = 300;
 
     // implementation of CustomLayerInterface to draw a pulsing dot icon on the map
     // see https://docs.mapbox.com/mapbox-gl-js/api/#customlayerinterface for more info
@@ -104,7 +100,7 @@ var size = 300;
                         'type': 'Feature',
                         'geometry': {
                             'type': 'Point',
-                            'coordinates': [-79.9311, 32.7765]
+                            'coordinates': 'Coordinates'
                         }
                     }
                 ]
@@ -142,8 +138,8 @@ var size = 300;
                     var latb = snap["Coordinates"][0];
                     var lngb = snap["Coordinates"][1];
                     var marker = new mapboxgl.Marker()
-                    .setLngLat([lngb, latb])
-                    .addTo(map);
+                        .setLngLat([lngb, latb])
+                        .addTo(map);
                 } else {
                     console.log('snap:', snap);
                 }

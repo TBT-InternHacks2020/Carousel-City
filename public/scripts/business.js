@@ -18,7 +18,7 @@ mapboxgl.accessToken = 'pk.eyJ1IjoiZGFyYTEyNDM4IiwiYSI6ImNrY3NpYXNqazE2ODMzM29jY
         inputs[i].onclick = switchLayer;
     }
 
-var size = 300;
+    var size = 300;
 
     // implementation of CustomLayerInterface to draw a pulsing dot icon on the map
     // see https://docs.mapbox.com/mapbox-gl-js/api/#customlayerinterface for more info
@@ -100,7 +100,7 @@ var size = 300;
                         'type': 'Feature',
                         'geometry': {
                             'type': 'Point',
-                            'coordinates': [-79.9311, 32.7765]
+                            'coordinates': 'Coordinates'
                         }
                     }
                 ]
@@ -122,11 +122,13 @@ var size = 300;
       var database = firebase.database();
       function readData() {
           database.ref().on("value", function (snapshot) {
-            var latb = snapshot.child(alert(localStorage.getItem("idStore"))).child("Coordinates").child(0).val();
-            var lngb = snapshot.child(alert(localStorage.getItem("idStore"))).child("Coordinates").child(1).val();
-            console.log(latb+" "+lngb);
+            var latb = snapshot.child(localStorage.getItem("idStore")).child("Coordinates").child(0).val();
+            var lngb = snapshot.child(localStorage.getItem("idStore")).child("Coordinates").child(1).val();
+            var marker = new mapboxgl.Marker()
+              .setLngLat([lngb, latb])
+              .addTo(map);
+            // console.log(latb+" "+lngb);
           });
       }
-  
       readData();
     }
