@@ -122,12 +122,13 @@ mapboxgl.accessToken = 'pk.eyJ1IjoiZGFyYTEyNDM4IiwiYSI6ImNrY3NpYXNqazE2ODMzM29jY
       var database = firebase.database();
       function readData() {
           database.ref().on("value", function (snapshot) {
-            var latb = snapshot.child(localStorage.getItem("idStore")).child("Coordinates").child(0).val();
-            var lngb = snapshot.child(localStorage.getItem("idStore")).child("Coordinates").child(1).val();
+            let storeId = snapshot.child(localStorage.getItem("idStore"));
+            var latb = storeId.child("Coordinates/0").val();
+            var lngb = storeId.child("Coordinates/1").val();
+
             var marker = new mapboxgl.Marker()
               .setLngLat([lngb, latb])
               .addTo(map);
-            // console.log(latb+" "+lngb);
           });
       }
       readData();
