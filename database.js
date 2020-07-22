@@ -125,7 +125,7 @@ function genereateBusinessStorefront(id, name, primaryColor, secondaryColor) {
     </svg>
 </div>
     <div class="enterStoreDiv">
-    <a class="enterStoreLink" href="#" onclick="enterStore(${id}, '${name}')">Enter ${name}</a>
+    <a class="enterStoreLink" href="business.html" onclick="enterStore(${id}, '${name}')">Enter ${name}</a>
     </div>
     </div>
   `

@@ -4,7 +4,7 @@
     height: 100%;
 }
 
-.content {
+#content {
     position: absolute;
     margin: auto;
     margin-bottom: 50px;
