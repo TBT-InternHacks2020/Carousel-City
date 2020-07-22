@@ -146,10 +146,7 @@ function enterStore(id, storeName) {
     document.getElementById("content").style.minHeight = "700px";
     document.getElementById("content").style.display = "inline-block";
     console.log(id + " " + storeName);
-}
-
-function generateInnerStore() {
-    document.getElementById("innerStore").innerHTML = '<img src="../images/Inside of Store.png"></img>';
+    localStorage.setItem("idStore",id);
 }
 
 readData();

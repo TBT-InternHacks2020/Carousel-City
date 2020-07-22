@@ -15,7 +15,6 @@
   <link rel="stylesheet" href="styles/business.css">
   <link rel="stylesheet" href="styles/fonts.css">
   
-  <script src="scripts/business.js"></script>
   <script src="../database.js"></script>
   <script src='https://api.mapbox.com/mapbox-gl-js/v1.11.1/mapbox-gl.js'></script>
   <link href='https://api.mapbox.com/mapbox-gl-js/v1.11.1/mapbox-gl.css' rel='stylesheet' />
@@ -44,16 +43,22 @@
   </div>
 
   <div id="content">
-    <div id='map' style='width: 400px; height: 300px;'></div>
-    <script>
-      mapboxgl.accessToken =
-        'pk.eyJ1IjoiZGFyYTEyNDM4IiwiYSI6ImNrY3NpYXNqazE2ODMzM29jYjk2cWc2YzUifQ.Ql0-___FiJ60TX3g0AY1HA';
-      var map = new mapboxgl.Map({
-        container: 'map',
-        style: 'mapbox://styles/mapbox/streets-v11'
-      });
-    </script>
+    <div id='map'></div>
+
+    <div id="menu">
+      <input id="streets-v11" type="radio" name="rtoggle" value="streets" checked="checked" />
+      <label for="streets-v11">streets</label>
+      <input id="light-v10" type="radio" name="rtoggle" value="light" />
+      <label for="light-v10">light</label>
+      <input id="dark-v10" type="radio" name="rtoggle" value="dark" />
+      <label for="dark-v10">dark</label>
+      <input id="outdoors-v11" type="radio" name="rtoggle" value="outdoors" />
+      <label for="outdoors-v11">outdoors</label>
+      <input id="satellite-v9" type="radio" name="rtoggle" value="satellite" />
+      <label for="satellite-v9">satellite</label>
+    </div>
   </div>
 </body>
 
+  <script src="scripts/business.js"></script>
 </html>

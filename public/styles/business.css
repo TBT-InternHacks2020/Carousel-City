@@ -1,13 +1,25 @@
 /* Always set the map height explicitly to define the size of the div
 * element that contains the map. */
 #map {
-    height: 100%;
+    position: absolute;
+    margin: auto;
+    width: 500px;
+    height: 300px;
+}
+
+#menu {
+    position: absolute;
+    margin: auto;
+    background: #fff;
+    padding: 10px;
+    font-family: 'Open Sans', sans-serif;
 }
 
 #content {
     position: absolute;
     margin: auto;
     margin-bottom: 50px;
+    height: 100%;
     right: 50px;
     left: 50px;
     padding: 50px;
