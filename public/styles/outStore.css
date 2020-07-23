@@ -111,3 +111,7 @@
     word-spacing: 10px;
     font-family: 'Open Sans', sans-serif;
 }
+
+.carousel-control-next, .carousel-control-prev {
+    width: 10%;
+}
