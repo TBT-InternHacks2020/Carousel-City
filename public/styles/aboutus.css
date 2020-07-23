@@ -2,7 +2,7 @@
     position: absolute;
     left: 300px;
     margin: auto;
-    margin-top: 10px;
+    margin-top: 14px;
     margin-bottom: 10px;
     width: 131px;
     height: 143px;
@@ -16,7 +16,7 @@
     position: absolute;
     right: 300px;
     margin: auto;
-    margin-top: 10px;
+    margin-top: 14px;
     margin-bottom: 10px;
     width: 131px;
     height: 143px;
@@ -30,7 +30,7 @@
     position: absolute;
     left: 300px;
     margin: auto;
-    margin-top: 10px;
+    margin-top: 14px;
     margin-bottom: 10px;
     width: 131px;
     height: 143px;
@@ -44,7 +44,7 @@
     position: absolute;
     right: 300px;
     margin: auto;
-    margin-top: 10px;
+    margin-top: 14px;
     margin-bottom: 10px;
     width: 131px;
     height: 143px;
@@ -59,10 +59,10 @@
     margin: auto;
     right: 280px;
     left: 280px;
-    height: 163px;
+    height: 200px;
     z-index: -2;
     background: #95e6a2;
-    border-radius: 50px;
+    border-radius: 100px;
 }
 
 #rectangle_orange {
@@ -70,10 +70,10 @@
     margin: auto;
     right: 280px;
     left: 280px;
-    height: 163px;
+    height: 200px;
     z-index: -2;
     background: #ffe594;
-    border-radius: 50px;
+    border-radius: 100px;
 }
 
 .content h1 {
@@ -87,8 +87,9 @@
 .content h2 {
     padding-bottom: 80px;
     text-align: left;
-    margin-left: 435px;
+    margin-left: 485px;
     margin-right: 300px;
+    margin-top: 30px;
     font-size: 18.72px;
     color: #3e7848;
 }
@@ -96,8 +97,9 @@
 .content h3 {
     padding-bottom: 80px;
     text-align: right;
-    margin-right: 435px;
+    margin-right: 485px;
     margin-left: 300px;
+    margin-top: 30px;
     font-size: 18.72px;
     color: darkgoldenrod;
 }

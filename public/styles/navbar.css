@@ -76,6 +76,7 @@ h1 span {
 
 .dropdownContent {
     display: none;
+    font-size: 18px;
     position: absolute;
     top: 66px;
     text-align: center;
