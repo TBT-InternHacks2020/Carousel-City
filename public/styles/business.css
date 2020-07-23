@@ -3,8 +3,10 @@
 #map {
     position: absolute;
     margin: auto;
-    width: 500px;
-    height: 300px;
+    width: 426px;
+    height: 164px;
+    left: 148px;
+    top: 160px;
 }
 
 #menu {
@@ -25,6 +27,11 @@
     left: 50px;
     padding: 50px;
     z-index: -2;
-    background: #397d75;
+    background: #65dbcd;
     border-radius: 50px;
+}
+
+#storeIn {
+    width: 1100px;
+    height: auto;
 }
