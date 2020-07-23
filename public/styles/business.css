@@ -3,15 +3,17 @@
 #map {
     position: absolute;
     margin: auto;
-    width: 426px;
-    height: 164px;
-    left: 148px;
-    top: 160px;
+    width: 436px;
+    height: 170px;
+    left: 144px;
+    top: 156px;
 }
 
 #menu {
     position: absolute;
     margin: auto;
+    left: 144px;
+    top: 156px;
     background: #fff;
     padding: 10px;
     word-spacing: 5px;
